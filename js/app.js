@@ -8,13 +8,17 @@ let visitorName = prompt('What is your name?');
 
 alert(`Welcome to my website ${visitorName}! Please guess yes or no to the following questions`);
 
-let questionOneGuess = prompt('Will you get arrested if caught driving intoxicated?').toUpperCase();
-
-if (questionOneGuess === 'Y' || questionOneGuess === 'YES') {
-  alert('You are correct!');
-} else if (questionOneGuess === 'N' || questionOneGuess === 'NO') {
-  alert('Sorry, you are wrong');
+function arrested(){
+  let questionOneGuess = prompt('Will you get arrested if caught driving intoxicated?').toUpperCase();
+  console.log(questionOneGuess);
+  if (questionOneGuess === 'Y' || questionOneGuess === 'YES') {
+    alert('You are correct!');
+  } else if (questionOneGuess === 'N' || questionOneGuess === 'NO') {
+    alert('Sorry, you are wrong');
+  }
 }
+
+arrested();
 
 let questionTwoGuess = prompt('Is it hot in Texas?').toUpperCase();
 
