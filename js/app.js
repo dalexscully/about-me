@@ -20,13 +20,17 @@ function arrested(){
 
 arrested();
 
-let questionTwoGuess = prompt('Is it hot in Texas?').toUpperCase();
+function texas(){
+  let questionTwoGuess = prompt('Is it hot in Texas?').toUpperCase();
 
-if (questionTwoGuess === 'Y' || questionTwoGuess === 'YES') {
-  alert('You are correct!');
-} else if (questionTwoGuess === 'N' || questionTwoGuess === 'NO') {
+  if (questionTwoGuess === 'Y' || questionTwoGuess === 'YES') {
+    alert('You are correct!');
+  } else if (questionTwoGuess === 'N' || questionTwoGuess === 'NO') {
   alert('You are incorrect!');
+  }
 }
+
+texas();
 
 let questionThreeGuess = prompt('Does it snow in California?').toUpperCase();
 
