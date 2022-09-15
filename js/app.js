@@ -4,7 +4,7 @@ console.log('hey world helllo!');
 
 let visitorName = prompt('What is your name?');
 
-// let score = 0;
+let score = 0;
 
 alert(`Welcome to my website ${visitorName}! Please guess yes or no to the following questions`);
 
@@ -92,27 +92,32 @@ function guessgame(){
 
 guessgame();
 
-let top8caribbeanislands = ['Jamaica', 'Bahamas', 'St Lucia', 'Trinidad and Tobago', 'Saint Vicent and The Grenadines', 'Aruba', 'Barbados', 'Cayman Islands', 'Antigua'];
+function islands(){
+  let top8caribbeanislands = ['Jamaica', 'Bahamas', 'St Lucia', 'Trinidad and Tobago', 'Saint Vicent and The Grenadines', 'Aruba', 'Barbados', 'Cayman Islands', 'Antigua'];
 
-let totalGuess = 0;
-let bool = false;
-while (totalGuess < 6 && bool === false) {
-  let questionSevenGuess = prompt('What is my top 8 caribbean islands?');
+  let totalGuess = 0;
+  let bool = false;
+  while (totalGuess < 6 && bool === false) {
+    let questionSevenGuess = prompt('What is my top 8 caribbean islands?');
 
-  totalGuess++;
-  for (let i = 0; i < top8caribbeanislands.length; i++) {
-    console.log(questionSevenGuess, top8caribbeanislands[i]);
-    if (questionSevenGuess === top8caribbeanislands[i]) {
-      alert('You are totally correct!');
-      score++;
-      bool = true;
-      break;
+    totalGuess++;
+    for (let i = 0; i < top8caribbeanislands.length; i++) {
+      console.log(questionSevenGuess, top8caribbeanislands[i]);
+      if (questionSevenGuess === top8caribbeanislands[i]) {
+        alert('You are totally correct!');
+        score++;
+        bool = true;
+        break;
+      }
+    }
+    if (bool === false) {
+      alert('Sorry that is incorrect!');
     }
   }
-  if (bool === false) {
-    alert('Sorry that is incorrect!');
-  }
+
 }
+
+islands();
 
 alert(`Thanks for playing ${visitorName}`);
 
