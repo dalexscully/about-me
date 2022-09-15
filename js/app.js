@@ -56,13 +56,17 @@ function chicken(){
 
 chicken();
 
-// let questionFiveGuess = prompt('Can a cow swim very well?').toUpperCase();
+function swim(){
+  let questionFiveGuess = prompt('Can a cow swim very well?').toUpperCase();
 
-// if (questionFiveGuess === 'Y' || questionFiveGuess === 'YES') {
-//   alert('That is correct!');
-// } else if (questionFiveGuess === 'N' || questionFiveGuess === 'NO') {
-//   alert('You are so wrong!');
-// }
+  if (questionFiveGuess === 'Y' || questionFiveGuess === 'YES') {
+    alert('That is correct!');
+  } else if (questionFiveGuess === 'N' || questionFiveGuess === 'NO') {
+    alert('You are so wrong!');
+  }
+}
+
+swim();
 
 
 // let myNumGuesses;
