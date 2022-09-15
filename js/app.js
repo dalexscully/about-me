@@ -68,48 +68,52 @@ function swim(){
 
 swim();
 
+function guessgame(){
+  let myNumGuesses;
 
-// let myNumGuesses;
+  let score = 0;
+  for (myNumGuesses = 0; myNumGuesses < 4; myNumGuesses++) {
+    let questionSixGuess = prompt('How many states are in the United States of America?');
+    if (questionSixGuess < 50) {
+      alert('Too low');
+    } else if (questionSixGuess > 50) {
+      alert('Too high');
+    } else if (questionSixGuess === '50') {
+      alert('That is very correct!');
+      score++;
+      break;
+    }
+  }
 
-// let score = 0;
-// for (myNumGuesses = 0; myNumGuesses < 4; myNumGuesses++) {
-//   let questionSixGuess = prompt('How many states are in the United States of America?');
-//   if (questionSixGuess < 50) {
-//     alert('Too low');
-//   } else if (questionSixGuess > 50) {
-//     alert('Too high');
-//   } else if (questionSixGuess === '50') {
-//     alert('That is very correct!');
-//     score++;
-//     break;
-//   }
-// }
-// if (myNumGuesses >= 4) {
-//   alert('All attempts have been exhausted! Correct number is 50');
-// }
+  if (myNumGuesses >= 4) {
+    alert('All attempts have been exhausted! Correct number is 50');
+  }
+}
 
-// let top8caribbeanislands = ['Jamaica', 'Bahamas', 'St Lucia', 'Trinidad and Tobago', 'Saint Vicent and The Grenadines', 'Aruba', 'Barbados', 'Cayman Islands', 'Antigua'];
+guessgame();
 
-// let totalGuess = 0;
-// let bool = false;
-// while (totalGuess < 6 && bool === false) {
-//   let questionSevenGuess = prompt('What is my top 8 caribbean islands?');
+let top8caribbeanislands = ['Jamaica', 'Bahamas', 'St Lucia', 'Trinidad and Tobago', 'Saint Vicent and The Grenadines', 'Aruba', 'Barbados', 'Cayman Islands', 'Antigua'];
 
-//   totalGuess++;
-//   for (let i = 0; i < top8caribbeanislands.length; i++) {
-//     console.log(questionSevenGuess, top8caribbeanislands[i]);
-//     if (questionSevenGuess === top8caribbeanislands[i]) {
-//       alert('You are totally correct!');
-//       score++;
-//       bool = true;
-//       break;
-//     }
-//   }
-//   if (bool === false) {
-//     alert('Sorry that is incorrect!');
-//   }
-// }
+let totalGuess = 0;
+let bool = false;
+while (totalGuess < 6 && bool === false) {
+  let questionSevenGuess = prompt('What is my top 8 caribbean islands?');
 
-// alert(`Thanks for playing ${visitorName}`);
+  totalGuess++;
+  for (let i = 0; i < top8caribbeanislands.length; i++) {
+    console.log(questionSevenGuess, top8caribbeanislands[i]);
+    if (questionSevenGuess === top8caribbeanislands[i]) {
+      alert('You are totally correct!');
+      score++;
+      bool = true;
+      break;
+    }
+  }
+  if (bool === false) {
+    alert('Sorry that is incorrect!');
+  }
+}
 
-// alert(`${score}`);
+alert(`Thanks for playing ${visitorName}`);
+
+alert(`${score}`);
