@@ -32,72 +32,75 @@ function texas(){
 
 texas();
 
-let questionThreeGuess = prompt('Does it snow in California?').toUpperCase();
+function california(){
+  let questionThreeGuess = prompt('Does it snow in California?').toUpperCase();
 
-if (questionThreeGuess === 'Y' || questionThreeGuess === 'YES') {
+  if (questionThreeGuess === 'Y' || questionThreeGuess === 'YES') {
   alert('You are absolutely wrong!');
-} else if (questionThreeGuess === 'N' || questionThreeGuess === 'NO') {
-  alert('You are correct so smart!');
-}
-
-let questionFourGuess = prompt('Can a chicken fly?').toUpperCase();
-
-if (questionFourGuess === 'Y' || questionFourGuess === 'YES') {
-  alert('You are totally incorrect!');
-} else if (questionFourGuess === 'N' || questionFourGuess === 'NO') {
-  alert('Very good that is correct');
-}
-
-let questionFiveGuess = prompt('Can a cow swim very well?').toUpperCase();
-
-if (questionFiveGuess === 'Y' || questionFiveGuess === 'YES') {
-  alert('That is correct!');
-} else if (questionFiveGuess === 'N' || questionFiveGuess === 'NO') {
-  alert('You are so wrong!');
-}
-
-
-let myNumGuesses;
-
-let score = 0;
-for (myNumGuesses = 0; myNumGuesses < 4; myNumGuesses++) {
-  let questionSixGuess = prompt('How many states are in the United States of America?');
-  if (questionSixGuess < 50) {
-    alert('Too low');
-  } else if (questionSixGuess > 50) {
-    alert('Too high');
-  } else if (questionSixGuess === '50') {
-    alert('That is very correct!');
-    score++;
-    break;
-  }
-}
-if (myNumGuesses >= 4) {
-  alert('All attempts have been exhausted! Correct number is 50');
-}
-
-let top8caribbeanislands = ['Jamaica', 'Bahamas', 'St Lucia', 'Trinidad and Tobago', 'Saint Vicent and The Grenadines', 'Aruba', 'Barbados', 'Cayman Islands', 'Antigua'];
-
-let totalGuess = 0;
-let bool = false;
-while (totalGuess < 6 && bool === false) {
-  let questionSevenGuess = prompt('What is my top 8 caribbean islands?');
-
-  totalGuess++;
-  for (let i = 0; i < top8caribbeanislands.length; i++) {
-    console.log(questionSevenGuess, top8caribbeanislands[i]);
-    if (questionSevenGuess === top8caribbeanislands[i]) {
-      alert('You are totally correct!');
-      score++;
-      bool = true;
-      break;
-    }
-  }
-  if (bool === false) {
-    alert('Sorry that is incorrect!');
+  } else if (questionThreeGuess === 'N' || questionThreeGuess === 'NO') {
+    alert('You are correct so smart!');
   }
 }
 
-alert(`Thanks for playing ${visitorName}`);
+california();
+// let questionFourGuess = prompt('Can a chicken fly?').toUpperCase();
 
-alert(`${score}`);
+// if (questionFourGuess === 'Y' || questionFourGuess === 'YES') {
+//   alert('You are totally incorrect!');
+// } else if (questionFourGuess === 'N' || questionFourGuess === 'NO') {
+//   alert('Very good that is correct');
+// }
+
+// let questionFiveGuess = prompt('Can a cow swim very well?').toUpperCase();
+
+// if (questionFiveGuess === 'Y' || questionFiveGuess === 'YES') {
+//   alert('That is correct!');
+// } else if (questionFiveGuess === 'N' || questionFiveGuess === 'NO') {
+//   alert('You are so wrong!');
+// }
+
+
+// let myNumGuesses;
+
+// let score = 0;
+// for (myNumGuesses = 0; myNumGuesses < 4; myNumGuesses++) {
+//   let questionSixGuess = prompt('How many states are in the United States of America?');
+//   if (questionSixGuess < 50) {
+//     alert('Too low');
+//   } else if (questionSixGuess > 50) {
+//     alert('Too high');
+//   } else if (questionSixGuess === '50') {
+//     alert('That is very correct!');
+//     score++;
+//     break;
+//   }
+// }
+// if (myNumGuesses >= 4) {
+//   alert('All attempts have been exhausted! Correct number is 50');
+// }
+
+// let top8caribbeanislands = ['Jamaica', 'Bahamas', 'St Lucia', 'Trinidad and Tobago', 'Saint Vicent and The Grenadines', 'Aruba', 'Barbados', 'Cayman Islands', 'Antigua'];
+
+// let totalGuess = 0;
+// let bool = false;
+// while (totalGuess < 6 && bool === false) {
+//   let questionSevenGuess = prompt('What is my top 8 caribbean islands?');
+
+//   totalGuess++;
+//   for (let i = 0; i < top8caribbeanislands.length; i++) {
+//     console.log(questionSevenGuess, top8caribbeanislands[i]);
+//     if (questionSevenGuess === top8caribbeanislands[i]) {
+//       alert('You are totally correct!');
+//       score++;
+//       bool = true;
+//       break;
+//     }
+//   }
+//   if (bool === false) {
+//     alert('Sorry that is incorrect!');
+//   }
+// }
+
+// alert(`Thanks for playing ${visitorName}`);
+
+// alert(`${score}`);
