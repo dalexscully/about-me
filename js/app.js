@@ -43,13 +43,18 @@ function california(){
 }
 
 california();
-// let questionFourGuess = prompt('Can a chicken fly?').toUpperCase();
 
-// if (questionFourGuess === 'Y' || questionFourGuess === 'YES') {
-//   alert('You are totally incorrect!');
-// } else if (questionFourGuess === 'N' || questionFourGuess === 'NO') {
-//   alert('Very good that is correct');
-// }
+function chicken(){
+  let questionFourGuess = prompt('Can a chicken fly?').toUpperCase();
+
+  if (questionFourGuess === 'Y' || questionFourGuess === 'YES') {
+    alert('You are totally incorrect!');
+  } else if (questionFourGuess === 'N' || questionFourGuess === 'NO') {
+    alert('Very good that is correct');
+  }
+}
+
+chicken();
 
 // let questionFiveGuess = prompt('Can a cow swim very well?').toUpperCase();
 
